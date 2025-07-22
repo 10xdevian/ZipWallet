@@ -1,8 +1,14 @@
 {
   "extends": "@repo/typescript-config/react-library.json",
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"],
   "compilerOptions": {
-    "outDir": "dist"
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+    "baseUrl": ".",
+    "paths": {
+      "@ui/*": ["./*"],
+      "@ui/components/*": ["./components/*"],
+      "@ui/lib/*": ["./lib/*"],
+      "@ui/styles/*": ["./styles/*"]
+    }
+  }
 }

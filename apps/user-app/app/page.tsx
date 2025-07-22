@@ -1,15 +1,19 @@
 import React from "react";
-import { Demo } from "@repo/ui/Demo";
 
-// import { prisma } from "@repo/db/client";
-// import { userSchema } from "@repo/zod-schema";
+import styles from "./page.module.css";
 
+import { Button } from "@ui/components/button";
+import LoginButton from "@ui/components/login-button";
 
 function page() {
   return (
     <div>
-      <h1 className="text-3xl text-yellow-500">User app</h1>
-      <Demo />
+      <h1 className="text-9xl bg-red-400">Hello user</h1>
+      <LoginButton>
+        <Button variant={"default"} size={"lg"}>
+          Workssss
+        </Button>
+      </LoginButton>
     </div>
   );
 }
