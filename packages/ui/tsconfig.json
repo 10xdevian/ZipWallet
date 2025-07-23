@@ -5,10 +5,16 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@ui/*": ["./*"],
-      "@ui/components/*": ["./components/*"],
+      // "@ui/*": ["./*"],
+      // "@ui/components/*": ["./components/*"],
+      // "@ui/auth/*": ["./components/auth/*"],
       "@ui/lib/*": ["./lib/*"],
-      "@ui/styles/*": ["./styles/*"]
+      "@ui/styles/*": ["./styles/*"],
+
+      "@ui/*": ["../../../packages/ui/*"],
+      "@/components/*": ["../../packages/ui/components/*"],
+      "@/components/ui": ["components/index.ts"],
+      "@/components/auth": ["components/ui/auth/index.ts"]
     }
   }
 }
