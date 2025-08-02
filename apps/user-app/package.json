@@ -2,7 +2,6 @@
   "name": "user-app",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack --port 3000",
     "build": "next build",
@@ -11,6 +10,8 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
+    "@repo/store": "*",
+    "ui": "*",
     "@repo/db": "*",
     "@repo/zod-schema": "*",
     "@types/react": "18.2.44",
@@ -19,8 +20,7 @@
     "next": "^15.3.0",
     "next-auth": "^4.24.11",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "ui": "*"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
